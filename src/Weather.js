@@ -178,7 +178,7 @@ export default function Weather() {
           </div>
           <small>
             <a
-              href="https://github.com/OlenaKut/Vanilla-Weather-App.git"
+              href="https://github.com/OlenaKut/my-app-weather-project.git"
               target="_blank"
               rel="noopener noreferrer"
             >
