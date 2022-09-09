@@ -10,7 +10,8 @@ export default function Weather() {
 
   function showWeather(response) {
     setMessage(true);
-    setTemperature(Math.round(response.data.main.temp));
+    temperature = response.data.main.temp;
+    setTemperature(Math.round(temperature));
     setWeather({
       temperature: Math.round(response.data.main.temp),
       humidity: response.data.main.humidity,
@@ -140,7 +141,7 @@ export default function Weather() {
               </div>
             </form>
             <div className="overview">
-              <h1 id="city"></h1>
+              <h1 id="city">{}</h1>
               <ul>
                 <li>
                   Last updated: <span id="date">14:01</span>
